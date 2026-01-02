@@ -4,38 +4,27 @@
     <meta charset="UTF-8">
     <title>emongolia</title>
     <style>
-     body {
+     html, body {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: #f4f4f4;
+    background: #000;
 }
 
-/* Desktop default */
 img {
-    width: 300px;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
     cursor: pointer;
-    transition: transform 0.3s;
 }
 
-/* Hover зөвхөн desktop-д */
-@media (hover: hover) {
-    img:hover {
-        transform: scale(1.05);
-    }
-}
-
-/* 📱 Mobile дэлгэц */
-@media (max-width: 768px) {
-    img {
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;   /* дэлгэцийг дүүргэнэ */
-        transform: none;
-    }
-}
 
     </style>
 </head>
@@ -48,3 +37,4 @@ img {
 
 </body>
 </html>
+
