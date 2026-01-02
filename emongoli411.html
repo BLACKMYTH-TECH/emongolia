@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <title>emongolia</title>
+    <style>
+      body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+/* Desktop default */
+img {
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+/* Hover зөвхөн desktop-д */
+@media (hover: hover) {
+    img:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* 📱 Mobile дэлгэц */
+@media (max-width: 768px) {
+    img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;   /* дэлгэцийг дүүргэнэ */
+        transform: none;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Зураг 1 дээр дархад 2.html руу орно -->
+    <a href="emongoli412.html">
+        <img src="411.PNG" alt=" 1">
+    </a>
+
+</body>
+</html>
